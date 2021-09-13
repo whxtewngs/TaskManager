@@ -1,0 +1,14 @@
+include ../arrow-button/arrow-button
+
+mixin calendar__week-day
+  .calendar__week-day 
+  
+.calendar 
+  .calendar__arrow-button-left 
+    +arrow-button
+
+  -for (let i = 1; i < 8; i++)
+    +calendar__week-day
+
+  .calendar__arrow-button-right 
+    +arrow-button_right

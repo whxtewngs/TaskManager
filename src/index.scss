@@ -1,0 +1,16 @@
+@import "./blocks/text/text";
+@import "./blocks/search-form/search-form";
+@import "./blocks/arrow-button/arrow-button";
+@import "./blocks/user-card/user-card";
+@import "./blocks/task-card/task-card";
+@import "./blocks/calendar/calendar";
+@import "./blocks/backlog/backlog";
+
+main {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  align-items: start;
+
+  gap: 0 5px;
+  padding-top: 20px;
+}

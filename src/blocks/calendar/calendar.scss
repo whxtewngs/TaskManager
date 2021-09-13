@@ -1,0 +1,64 @@
+.calendar {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 150px repeat(7, 1fr) min-content;
+  grid-template-rows: auto;
+  grid-auto-rows: 150px;
+  gap: 10px 5px;
+}
+
+.calendar__arrow-button-left {
+  justify-self: end;
+}
+
+.calendar__arrow-button-right {
+  justify-self: start;
+}
+
+.calendar__week-day {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+
+  border-radius: 5px;
+  box-shadow: 0 0 1px grey;
+}
+
+.calendar__week-day.calendar__week-day_today::after {
+  content: "Сегодня";
+  position: absolute;
+  top: -15px;
+  left: 25px;
+  
+  display: grid;
+  place-content: center;
+
+  width: 50px;
+  height: 15px;
+
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #1B4965;
+
+  font-size: 0.7em;
+  font-weight: bold;
+  color: white;
+}
+
+.calendar__user-card {
+  grid-column: 1;
+}
+
+.calendar__task-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.calendar__task-card {
+  height: 50%;
+  
+  
+}

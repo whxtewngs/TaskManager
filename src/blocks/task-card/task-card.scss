@@ -1,0 +1,50 @@
+.task-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.task-card__prompt {
+  position: absolute;
+  bottom: -50%;
+  right: -90%;
+
+  z-index: 100;
+
+  display: none;
+  flex-direction: column;
+
+  width: max-content;
+  padding: 10px;
+
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 1px gray;
+
+  font-size: 0.8em;
+}
+
+.task-card:hover .task-card__prompt {
+  display: flex;
+}
+
+.task-card_theme_calendar {
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  place-content: center;
+  
+  background-color: #BEE9E8;
+}
+
+.task-card_theme_backlog {
+  gap: 10px;
+  padding: 10px;
+
+  background-color: #5FA8D3;
+  color: white;
+  cursor: pointer;
+}

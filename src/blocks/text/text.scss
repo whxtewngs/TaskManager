@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("font/Montserrat-Regular.ttf") format("ttf"), url("font/Montserrat-Regular.woff") format("woff"), url("font/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("font/Montserrat-Bold.ttf") format("ttf"), url("font/Montserrat-Bold.woff") format("woff"), url("font/Montserrat-Bold.svg") format("svg");
+  font-weight: bold;
+}
+
+.text {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.text_bold {
+  font-weight: bold;
+}
+
+.text_size_large {
+  font-size: 18px;
+}
+
